@@ -68,11 +68,12 @@ header{
     color: #C0B061;
 }
 
-.nav-logo {
-    font-family:"Mouse Memoirs",sans-serif;
-    font-size:2rem;
-    color:white;
-    padding:20px;
+.nav-logo-link{
+    display: block;
+    padding: 1.25rem;
+    color: white;
+    font-family: "Mouse Memoirs",sans-serif;
+    font-size: 2rem;
 }
 
 /* Responsive top navbar */

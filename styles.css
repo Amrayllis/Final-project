@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Rosario:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +12,17 @@ li {
 a {
     text-decoration: none;
 }
+
 header{
     background-color: #463354;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .hamburger {
     display: none;
     margin-right:1rem;
@@ -36,6 +37,7 @@ header{
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -63,6 +65,7 @@ header{
     color:white;
     padding:20px;
 }
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -107,14 +110,17 @@ header{
     margin-top:20px;
     height: 420px;
 }
+
 #home{
     display: flex;
 }
+
 .home-text{
     display:flex;
     flex-direction: column;
     margin:5%;
 }
+
 .home-text h1{
     font-family: 'Mouse Memoirs', sans-serif;
     font-size: 3rem;
@@ -122,10 +128,12 @@ header{
     color: rgb(31, 31, 31);
     padding-bottom:20px;
 }
+
 .real-text{
     color:#727272;
     padding:20px 0;
 }
+
 .home-text a{
     margin-top:30px;
     padding:15px 10px;
@@ -146,6 +154,7 @@ header{
    background-color: #463354; 
    text-align:center;
 }
+
 h2{
     font-family:'Mouse Memoirs', sans-serif ;
     font-size:2.6rem;
@@ -153,32 +162,38 @@ h2{
     color:#C0B061;
     padding-top:3rem;
 }
+
 .purple-band p{
     color:white;
     margin-top:1rem;
 }
+
 /*position relative*/
 .riddle-and-image{
     position:relative;
     bottom:200px;
 }
+
 .overlap-div{
     display: flex;
     justify-content: space-between;
     width:80%;
     margin:0 auto;
 }
+
 .overlap-div img{
     height:40vh;
     filter: drop-shadow(25px 21px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
 
 }
+
 .overlap-div .riddle-yellow{
     margin-top:10vh;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #c0b061ca;
 }
+
 .overlap-div .riddle-yellow p{
     color: #ffff;
     font-size: 1.3rem;
@@ -187,15 +202,18 @@ h2{
     height: 70px;
     padding:5vh;
 }
+
 .our-founder-text{
     width:80%;
     margin:0 auto;
     padding-top:10vh;
 }
+
 .our-founder-riddle{
     font-family: 'Mouse Memoirs',sans-serif;
     font-size:25px;
 }
+
 .our-founder-text a {
     text-align: center;
     margin-top:70px;
@@ -208,34 +226,41 @@ h2{
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
+
 .our-founder-effect{
     height:15vh;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
                           /* OUR FACILITIES*/
 .our-facilities-pictures{
     display: flex;
     justify-content: space-around;
 }
+
 .our-facilities-pictures img{
     width: 300px;
     border-radius: 10px 10px 0 0;
 }
+
 .our-facilities{
     text-align: center;
     background-color: #463354;
 }
+
 .our-facilities p{
     color: #fff;
     margin-top: 1rem;
     margin-bottom: 4rem;
 }
+
 .our-facilities-two-text{
     display: flex;
     justify-content: space-around;
 }
+
 .our-facilities-two-text .text-item{
     display: flex;
     align-items: center;
@@ -244,40 +269,49 @@ h2{
     background-color: #c0b0614d;
     border-radius: 0 0 10px 10px;
 }
+
 .our-facilities-two-text .text-item p{
     width:70%;
     margin: 0 auto;
     color:#5F5C5C;
 }
+
 .our-facilities-two-titles{
     display: flex;
     justify-content: space-around;
     position: relative;
     bottom:20px;
 }
+
 .our-facilities-two-titles .title-item{
     font-family: 'Mouse Memoirs',sans-serif;
     color:#C0B061;
     font-size: 2rem;
 }
+
 .our-facilities-pictures div img{
     height:100%;
 }
+
                                /*OUR STUDENTS*/
 .our-student-images img{
     height:250px;
-}     
+}  
+   
 .our-students-white{
     margin-top:70px;
     text-align: center;
 }  
+
 .our-students-white p{
     margin-top:1rem;
     margin-bottom:3rem;
-}      
+} 
+
 .our-students-purple{
     background-color: #463354;
 }  
+
 .our-students-purple h3{
     font-family: "Mouse Memoirs",sans-serif;
     font-size:2rem;
@@ -285,37 +319,44 @@ h2{
     text-align: end;
     padding:2rem;
 }
+
 .our-student-images{
     padding:2rem;
     display: flex;
     justify-content: space-around;
     text-align: center;
     color: #fff;
-}   
+}
+
 .our-students-names{
     font-family: "Mouse Memoirs",sans-serif;
     font-size:2rem;
     color:#C0B061;
     margin-top:1rem;
 } 
+
                                   /*JOIN US*/    
 #join-us{
     display: flex;
     width:80%;
     margin :0 auto;
 }
+
 .join-us-title{
     padding-top:50px;
     text-align: center;
 }
+
 .join-us-text{
     width:80%;
     padding:70px 0;
 }
+
 .join-us-text h3{
     font-size: 1.7rem;
     padding:20px 0;
 }
+
 .join-us-form form{
     padding:50px;
 }
@@ -328,6 +369,7 @@ h2{
     padding:15px;
     width: 500px;
 }
+
 .join-us-form form input[type="submit"]{
     border: 0;
     border-radius:10px;
@@ -337,6 +379,7 @@ h2{
     padding: 15px;
     margin:10px 0;
 }
+
 /*FOOTER*/
 footer{
     background-color: #463354;
@@ -345,6 +388,7 @@ footer{
     justify-content:space-evenly;
     padding:50px;
 }
+
 .footer-left{
     width: 60%;
     display: flex;
@@ -352,13 +396,16 @@ footer{
     flex-direction: column;
     margin-left:100px;
 }
+
 .footer-right{
     width: 60%;
 }
+
 .text-right h3{
     text-align: center;
     margin-bottom: 20px;
 }
+
 .information{
     padding: 10px 0;
 }
@@ -370,6 +417,7 @@ footer{
     background-color: #fff;
     color: #a09355;
 }
+
 .icons-right i{
     padding:10px;
     border-radius: 10px;
@@ -377,9 +425,11 @@ footer{
     color:#a09355;
     margin:10px;
 }
+
 .icons-right{
     text-align: center;
 }
+
 .text-right p{
     margin-bottom: 20px;
 }

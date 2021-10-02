@@ -8,8 +8,17 @@
 
 /* Generic styles */
 
+:root{
+    --main-purple: #463354;
+    --main-gold: #C0B061;
+}
+
 html{
     font-size: 16px;
+}
+
+header{
+    background-color: var(--main-purple);
 }
 
 li {
@@ -20,9 +29,14 @@ a {
     text-decoration: none;
 }
 
-header{
-    background-color: #463354;
+h2{
+    padding-top: 3rem;
+    font-family: 'Mouse Memoirs', sans-serif ;
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--main-gold);
 }
+
 
 /* Top navbar */
 
@@ -62,7 +76,7 @@ header{
 }
 
 .nav-link:hover{
-    color: #C0B061;
+    color: var(--main-gold);
 }
 
 .nav-logo-link{
@@ -91,7 +105,7 @@ header{
     }
 
     .nav-link{
-        color: #C0B061;
+        color: var(--main-gold);
     }
 
     .nav-menu.active {
@@ -147,7 +161,7 @@ header{
     font-size: 3rem;
     font-weight: 100;
     color: rgb(31, 31, 31);
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 .real-text{
@@ -160,7 +174,7 @@ header{
     padding: 15px 10px;
     display: inline-block;
     color: #fff;
-    background-color: #C0B061 ;
+    background-color: var(--main-gold);
     width: 110px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
@@ -196,89 +210,105 @@ header{
 /* Our founder section */
 
 .purple-band{
-   z-index: -1;
-   width:100%;
-   height:55vh;
-   padding-top:30px;
-   background-color: #463354; 
-   text-align:center;
-}
-
-h2{
-    font-family:'Mouse Memoirs', sans-serif ;
-    font-size:2.6rem;
-    font-weight: 500;
-    color:#C0B061;
-    padding-top:3rem;
+    padding-top: 1.875rem;
+    background-color: var(--main-purple); 
+    text-align: center;
 }
 
 .purple-band p{
-    color:white;
-    margin-top:1rem;
-}
-
-/*position relative*/
-.riddle-and-image{
-    position:relative;
-    bottom:200px;
+    color: white;
+    margin-top: 1rem;
 }
 
 .overlap-div{
     display: flex;
-    justify-content: space-between;
-    width:80%;
-    margin:0 auto;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .overlap-div img{
-    height:40vh;
+    height: 280px;
+    position: relative;
+    top: 3rem;
     filter: drop-shadow(25px 21px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
-
 }
 
-.overlap-div .riddle-yellow{
-    margin-top:10vh;
+.riddle-yellow{
+    position: relative;
+    top: 2rem;
+    padding: 2.5rem 2rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: #c0b061ca;
+    background: var(--main-gold);
 }
 
-.overlap-div .riddle-yellow p{
+.riddle-yellow p{
+    margin: 0;
     color: #ffff;
     font-size: 1.3rem;
     font-style: italic;
-    width:40vw;
-    height: 70px;
-    padding:5vh;
+}
+
+@media screen and (max-width: 900px){
+
+    .overlap-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlap-div img{
+        margin-top: 2rem;
+        order: 1;
+        position: static;
+    }
+
+    .riddle-yellow{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    .overlap-div img{
+        height: 250px;
+    }
+
+    .riddle-yellow{
+        padding: 2rem 1.5rem;
+    }
 }
 
 .our-founder-text{
-    width:80%;
+    width: 80%;
     margin:0 auto;
-    padding-top:10vh;
+    padding-top: 10vh;
 }
 
 .our-founder-riddle{
     font-family: 'Mouse Memoirs',sans-serif;
-    font-size:25px;
+    font-size: 25px;
 }
 
 .our-founder-text a {
     text-align: center;
-    margin-top:70px;
-    padding:10px 10px;
+    margin-top: 70px;
+    padding: 10px 10px;
     display: block;
-    color:white;
-    background-color:#C0B061 ;
-    width:170px;
-    height:40px;
+    color: white;
+    background-color: var(--main-gold);
+    width: 170px;
+    height: 40px;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
 .our-founder-effect{
-    height:15vh;
-    display:flex;
+    height: 15vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -298,7 +328,7 @@ h2{
 
 .our-facilities{
     text-align: center;
-    background-color: #463354;
+    background-color: var(--main-purple);
 }
 
 .our-facilities p{
@@ -313,67 +343,67 @@ h2{
 }
 
 .our-facilities-two-text .text-item{
+    width: 300px;
+    height: 150px;
     display: flex;
     align-items: center;
-    width: 300px;
-    height:150px;
     background-color: #c0b0614d;
     border-radius: 0 0 10px 10px;
 }
 
 .our-facilities-two-text .text-item p{
-    width:70%;
+    width: 70%;
     margin: 0 auto;
-    color:#5F5C5C;
+    color: #5F5C5C;
 }
 
 .our-facilities-two-titles{
     display: flex;
     justify-content: space-around;
     position: relative;
-    bottom:20px;
+    bottom: 20px;
 }
 
 .our-facilities-two-titles .title-item{
     font-family: 'Mouse Memoirs',sans-serif;
-    color:#C0B061;
+    color: var(--main-gold);
     font-size: 2rem;
 }
 
 .our-facilities-pictures div img{
-    height:100%;
+    height: 100%;
 }
 
 /* Our students section */
 
 .our-student-images img{
-    height:250px;
+    height: 250px;
 }  
    
 .our-students-white{
-    margin-top:70px;
+    margin-top: 70px;
     text-align: center;
 }  
 
 .our-students-white p{
-    margin-top:1rem;
-    margin-bottom:3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 } 
 
 .our-students-purple{
-    background-color: #463354;
+    background-color: var(--main-purple);
 }  
 
 .our-students-purple h3{
     font-family: "Mouse Memoirs",sans-serif;
-    font-size:2rem;
-    color:#C0B061;
+    font-size: 2rem;
+    color: var(--main-gold);
     text-align: end;
-    padding:2rem;
+    padding: 2rem;
 }
 
 .our-student-images{
-    padding:2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -382,27 +412,27 @@ h2{
 
 .our-students-names{
     font-family: "Mouse Memoirs",sans-serif;
-    font-size:2rem;
-    color:#C0B061;
-    margin-top:1rem;
+    font-size: 2rem;
+    color: var(--main-gold);
+    margin-top: 1rem;
 } 
 
 /* Join us section */
 
 #join-us{
+    width: 80%;
     display: flex;
-    width:80%;
-    margin :0 auto;
+    margin: 0 auto;
 }
 
 .join-us-title{
-    padding-top:50px;
+    padding-top: 50px;
     text-align: center;
 }
 
 .join-us-text{
-    width:80%;
-    padding:70px 0;
+    width: 80%;
+    padding: 70px 0;
 }
 
 .join-us-text h3{
@@ -411,36 +441,36 @@ h2{
 }
 
 .join-us-form form{
-    padding:50px;
+    padding: 50px;
 }
 
 .join-us-form form input[type="text"],textarea{
-    border:0;
-    border:2px solid #463354;
-    border-radius: 10px;
-    margin:10px auto;
-    padding:15px;
     width: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 0;
+    border: 2px solid var(--main-purple);
+    border-radius: 10px;
 }
 
 .join-us-form form input[type="submit"]{
     border: 0;
-    border-radius:10px;
+    border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #C0B061;
+    background-color: var(--main-gold);
     color: #fff;
     padding: 15px;
-    margin:10px 0;
+    margin: 10px 0;
 }
 
 /* Footer */
 
 footer{
-    background-color: #463354;
-    color: #fff;
     display: flex;
-    justify-content:space-evenly;
-    padding:50px;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-color: var(--main-purple);
+    color: #fff;
 }
 
 .footer-left{
@@ -448,7 +478,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left:100px;
+    margin-left: 100px;
 }
 
 .footer-right{
@@ -465,19 +495,19 @@ footer{
 }
 
 .information i{
-    margin:0 10px;
-    padding:10px;
+    margin: 0 10px;
+    padding: 10px;
     border-radius: 50%;
     background-color: #fff;
     color: #a09355;
 }
 
 .icons-right i{
-    padding:10px;
+    padding: 10px;
     border-radius: 10px;
     background-color: #fff;
-    color:#a09355;
-    margin:10px;
+    color: #a09355;
+    margin: 10px;
 }
 
 .icons-right{

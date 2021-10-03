@@ -336,9 +336,60 @@ button{
 
 /* Our facilities section */
 
+#our-facilities{
+    padding: 0 1rem;
+    text-align: center;
+    background-color: var(--main-purple);
+}
+
+.our-facilities-details{
+    margin: 1rem 0 4rem 0;
+    color: #fff;
+}
+
+.facilities-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.facility-card{
+    min-width: 300px;
+    max-width: 300px;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ece7cf;
+}
+
+.facility-img img{
+    width: 100%;
+}
+
+.facility-text{
+    padding: 1rem;
+}
+
+.facility-details{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #5F5C5C;
+}
+
+.facility-title{
+    font-family: 'Mouse Memoirs',sans-serif;
+    color: var(--main-gold);
+    font-size: 2rem;
+}
+
+
+
+
 .our-facilities-pictures{
     display: flex;
     justify-content: space-around;
+    border: 1px solid red;
 }
 
 .our-facilities-pictures img{

@@ -182,9 +182,14 @@ button{
     background-color: var(--main-gold);
     width: 110px;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:inset 0 0 0 0 ;
+    transition: ease-out 0.3s;
 }
-
+.home-text a:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow:inset 120px 0 0 0 #4f05fd;
+}
 /* Responsive home section */
 
 @media screen and (max-width: 760px){
@@ -256,6 +261,14 @@ button{
     color: #ffff;
     font-size: 1.3rem;
     font-style: italic;
+}
+
+.answer-riddle{
+    color:var(--main-purple);
+    margin-top:20px;
+    font-style: normal;
+    font-size:1.2rem;
+    display:none;
 }
 
 /* Responsive purple-band */
@@ -390,27 +403,19 @@ button{
 .our-student-images img{
     height: 250px;
 }  
-   
-.our-students-white{
-    margin-top: 70px;
+
+.our-students{
+    background-color:var(--main-purple);
+    color:white;
+}  
+
+.our-students h2{
     text-align: center;
-}  
+    padding:2.5rem 1rem 1rem 1rem;
+}
 
-.our-students-white p{
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-} 
-
-.our-students-purple{
-    background-color: var(--main-purple);
-}  
-
-.our-students-purple h3{
-    font-family: "Mouse Memoirs",sans-serif;
-    font-size: 2rem;
-    color: var(--main-gold);
-    text-align: end;
-    padding: 2rem;
+.our-students p{
+    text-align: center;
 }
 
 .our-student-images{
@@ -457,7 +462,6 @@ button{
     padding:30px;
     display:none;
 }
-
 .red-message ul{
     padding-left:50px;
 }

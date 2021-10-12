@@ -21,26 +21,22 @@ function closeMenu() {
 
     //select HTML elements
     const name=document.querySelector('.name')
-    console.log("name=",name)
     const email=document.querySelector('.email')
-    console.log("email =", email)
     const number=document.querySelector('.number')
-    console.log("phone number=",number)
     const message=document.querySelector('.message')
-    console.log("message=",message)
     const submit=document.querySelector('.submit-btn')
-    console.log("button=",submit)
     const redMessage=document.querySelector('.red-message')
-    console.log("error message=",redMessage)
     const submitText=document.querySelector('.submit-text')
     const check=document.querySelector('#check-icon')
-    console.log("check icon =",check)
 
     //Displaying the error message
     submit.addEventListener("click",submitClick)
     function submitClick(){
-        if(email.value==="" && name.value==="" && number.value==="" && message.value===""){
+        if(email.value==="" || name.value==="" || number.value==="" || message.value===""){
             redMessage.style.display="block"
+            submitText.textContent="Submit";
+            submit.style.width="80px";
+            check.style.display="none";
         }
         else{
             redMessage.style.display="none"
@@ -49,3 +45,17 @@ function closeMenu() {
             check.style.display="block";
         }}
     
+
+//Answering the riddle
+    
+    //Select HTML element
+    const riddleBtn=document.querySelector('#our-founder-riddle-toggle')
+    console.log("Button answer riddle =",riddleBtn)
+    const answer=document.querySelector('.answer-riddle')
+    console.log("answer=",answer)
+
+    //Displaying the answer
+    riddleBtn.addEventListener("click",submitClickTwo)
+    function submitClickTwo(){
+        answer.style.display="block"
+    }

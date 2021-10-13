@@ -43,6 +43,7 @@ function submitClick() {
         submitText.textContent = "Submitted";
         submit.style.width = "120px";
         check.style.display = "block";
+        check.style.padding="5px";
     }
 }
 

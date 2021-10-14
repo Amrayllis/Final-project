@@ -1,4 +1,4 @@
-//Burger Menu
+//BBURGER MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -17,7 +17,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-//Red messaging
+//RED MESSAGING
 
 //select HTML elements
 const name = document.querySelector('.name')
@@ -61,3 +61,31 @@ riddleBtn.addEventListener("click", submitClickTwo)
 function submitClickTwo() {
     answer.classList.add("show-answer-riddle");
 }
+
+
+//SHOPPING CLASSES
+
+//Selecting HTML elements
+const plus=document.querySelectorAll(".plus");
+console.log("plus =",plus)
+const greenMessage=document.querySelector(".classes-message-background");
+console.log("message =",greenMessage)
+const quant=document.querySelector(".quant");
+console.log("quantity=",quant)
+
+//Incrementing quantity
+function incrementation(){
+    while(quant<3){
+        quant.value++
+    }
+}
+    for( let i=0; i < plus.length; i++){
+    plus[i].addEventListener('click', incrementation)
+    function incrementation(){
+        quant.value++
+        plus[i].style.opacity="0.5"
+        plus[i].removeEventListener('click',incrementation)
+        }
+    }
+
+    

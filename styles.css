@@ -181,9 +181,9 @@ button{
     display: inline-block;
     color: #fff;
     width:400px;
-    background: rgb(24,23,56);
-    background: linear-gradient(90deg, rgba(24,23,56,1) 1%, rgba(119,191,199,1) 96%);border-radius: 20px;
-    border-bottom: 5px solid #ccccdf;
+    background-color:#569197;
+    border-radius: 20px;
+    border-bottom: 6px solid #507175;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -399,6 +399,66 @@ button{
     font-size: 2rem;
 }
 
+/*SHOP CLASSES SECTION*/
+.title-text{
+    text-align: center;
+}
+.title-text h2{
+    padding:50px 20px 20px 20px;
+}
+.title-text p{
+    width:80%;
+    margin:0 auto;
+}
+.classes-icons{
+    width:70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:50px;
+}
+
+.classes-container{
+    padding-top:30px;
+    display:flex;
+}
+
+.class-one,.class-two,.class-three,.class-four,.class-five,.class-six{
+    display: flex;
+    flex-direction: column;
+    width:150px;
+    text-align:center;
+    font-weight: 600;
+    font-size:1.2rem;
+}
+.class-one i,.class-two i,.class-three i,.class-four i,.class-five i,.class-six i{
+    color: var(--main-purple);
+}
+.quant{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size:2rem;
+    color:var(--main-purple);
+    border:0;
+    text-align:center;
+    width:100%;
+    background-color: var(--main-gold);
+}
+#shop-classes img{
+    height:150px;
+}
+
+.classes-message{
+    margin: auto 0;
+}
+
+.classes-message-background{
+    text-align: center;
+    background-color: var(--main-gold);
+    border-radius: 20px;
+    padding:30px;
+    width:80%;
+    margin:0 auto;
+    color:white;
+}
 
 /* Our students section */
 
